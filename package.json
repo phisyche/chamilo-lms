@@ -36,6 +36,12 @@
     "simplewebrtc": "^3.0.1",
     "timeago": "^1.6.1",
     "webcamjs": "^1.0.24",
-    "webpack-jquery-ui": "^1.0.0"
-  }
+    "webpack-jquery-ui": "^1.0.0",
+    "snyk": "^1.67.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
